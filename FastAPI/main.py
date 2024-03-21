@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import openai
 import time
+nltk.download('punkt')
 nltk.download('stopwords')
 openai.api_key = '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'
 

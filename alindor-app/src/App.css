@@ -124,7 +124,7 @@
 }
 .btn-submit-upload {
   position: relative;
-  width: 79px;
+  width: 106px;
   height: 17px;
   font-family: Inter;
   font-size: 14px;
@@ -139,7 +139,7 @@
   padding: 0;
   outline: none;
   top:-21px;
-  left:55px;
+  left:46px;
 }
 
 @media (max-width: 414px){

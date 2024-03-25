@@ -22,17 +22,20 @@ setSelectedFile(event.target.files[0]);
 const uploadFile = async (e) => {
 const formData = new FormData();
 formData.append('file', selectedFile);
+setIsLoading(true);
 try {
   const data = await Api.post('/upload/', formData, {
     headers: {
       'Content-Type': 'multipart/form-data'
     }
   });
+  setIsLoading(false);
   setResponseData(data.data);
   console.log(data.data)
   console.log('File uploaded successfully');
 } catch (error) {
   console.error('Error uploading file:', error);
+  setIsLoading(false);
 }
 };
 
@@ -115,7 +118,7 @@ return (
             </label>
           </div>
           <button className="btn-submit-upload" onClick={uploadFile}>
-            Upload txt
+            Upload txt/mp3
           </button>
         </div>
       </div>

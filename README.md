@@ -28,7 +28,8 @@ pip install -r requirements.txt
 
 then run command [uvicorn main:app --reload]
 
-#Explorer mode
+# Explorer mode
+precaution = Kindly don't use long files or long audio files of more than 1 minute as i am using an open AI free credits plan, if we hit the daily limit of 200 requests per day it will throw an error  also so use less lengthy audio i have provided sample audio file in GitHub repo for this
 # steps to run the app for [deployed]
 
 

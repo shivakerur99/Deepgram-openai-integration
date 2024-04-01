@@ -16,7 +16,7 @@ import time
 nltk.download('punkt')
 nltk.download('stopwords')
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 app = FastAPI()
 

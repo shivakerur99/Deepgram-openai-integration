@@ -86,11 +86,9 @@ return (
             {selectedFile && `${selectedFile.name}`}
           </div>
       </div>
-      <div className="Upload-container">
-        <div className="file-upload-logo">
-          <div className="file-upload-logo-innerfile">
+      <div className="file-upload-logo-innerfile">
             <label htmlFor="fileInput" className="svg-icon">
-              <svg
+              {/* <svg
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -108,15 +106,16 @@ return (
                       <rect width="18" height="18" fill="white" />
                     </clipPath>
                   </defs>
-              </svg>
+              </svg> */}
                 <input
                   type="file"
                   id="fileInput"
-                  style={{ display: 'none' }}
                   onChange={handleFileChange}
                 />
             </label>
           </div>
+      <div className="Upload-container">
+        <div className="file-upload-logo">
           <button className="btn-submit-upload" onClick={uploadFile}>
             Upload txt/mp3
           </button>
